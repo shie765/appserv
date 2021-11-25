@@ -1,14 +1,14 @@
-#include <Wire.h>  // Arduino IDE ����
+#include <Wire.h> 
 #include <LiquidCrystal_I2C.h>
 #include <dht.h>     
 #define dht_dpin A0 
 
 dht DHT; 
-LiquidCrystal_I2C lcd(0x27, 2, 1, 0, 4, 5, 6, 7, 3, POSITIVE);  // �]�w LCD I2C ��}
+LiquidCrystal_I2C lcd(0x27, 2, 1, 0, 4, 5, 6, 7, 3, POSITIVE);  
 
 void setup() {
-  Serial.begin(115200);  // �Ω��ʿ�J��r
-  lcd.begin(16, 2);      // ��l�� LCD�A�@�� 16 ���r���A�@ 2 ��A�w�]�}�ҭI��
+  Serial.begin(115200);  
+  lcd.begin(16, 2);      
 
   // �{�{�T��
   for(int i = 0; i < 3; i++) {
